@@ -1,6 +1,6 @@
 R.<x,y> = PolynomialRing(RR, 2, "xy", order = "lex")
 
-def div_multinomio(F, f, R = R):
+def div_poly(F, f, R = R):
     """
     Implementa el algoritmo de division
     de polinomios multivariados.
@@ -33,21 +33,4 @@ def div_multinomio(F, f, R = R):
     return q, r
 
 
-# Ejemplo 1
-
-f = x*y^2+y
-f1 = x*y+1
-f2 = y+1
-
-# Ejemplo 2
-
-f = x^2*y+x*y^2+y^2
-f1 = y^2-1
-f2 = x*y-1
-
-F, r = div_multinomio([f1,f2], f)
-
-print(F,r)
-
-print(F[0]*f1+F[1]*f2 + r)
 
