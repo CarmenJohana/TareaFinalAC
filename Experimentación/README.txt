@@ -1,1 +1,0 @@
-Aquí irán las diapositivas y los resultados experimentales
